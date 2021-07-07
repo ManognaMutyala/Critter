@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-//Single table as it would be easier to fetch the polymorphic queries
+//table class as all the properties of a class, are in its table, so no join is required
 public class Users {
 
     @Id
